@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fakebook - Home</title>
+  <link rel="stylesheet" href="/home/home.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-left">
+        <div class="logo">
+          <img src="/images/download2.png" alt="Logo" />
+        </div>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search Fakebook" />
+        </div>
+      </div>
+
+      <div class="nav-center">
+        <i class="fa-solid fa-house"></i>
+        <a href="#"><i class="fa-solid fa-tv"></i></a>
+        <a href="#"><i class="fa-solid fa-store"></i></a>
+        <a href="#"><i class="fa-solid fa-users"></i></a>
+        <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+      </div>
+
+      <div class="nav-right">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-brands fa-facebook-messenger"></i>
+        <i class="fa-solid fa-bell"></i>
+
+        <img src="/images/profile.jpg" alt="Profile" class="profile-pic" onclick="openCard()" />
+        <div class="card-menu-wrap" id="cardWrap">
+          <div class="card-menu">
+            <div class="profile-menu">
+              <img src="/images/profile.jpg" alt="Profile Menu" />
+              <p>Chintu Hacker</p>
+            </div>
+            <a href="#" class="card-menu-items">
+              <i class="fa-brands fa-meta"></i>
+              <p>Meta Business Suite</p>
+              <span>></span>
+            </a>
+            <a href="#" class="card-menu-items">
+              <i class="fa-solid fa-gear"></i>
+              <p>Settings</p>
+              <span>></span>
+            </a>
+            <a href="#" class="card-menu-items">
+              <i class="fa-solid fa-question"></i>
+              <p>Help & Support</p>
+              <span>></span>
+            </a>
+            <a href="#" class="card-menu-items">
+              <i class="fa-solid fa-display"></i>
+              <p>Display & Accessibility</p>
+              <span>></span>
+            </a>
+            <a href="#" class="card-menu-items">
+              <i class="fa-solid fa-comment-dots"></i>
+              <p>Give Feedback</p>
+            </a>
+            <a href="#" class="card-menu-items">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <p>Logout</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main">
+
+            <!-- left section -->
+            <div class="main-left">
+                <!-- QUICK LINKS SECTION -->
+                <div id="quick-links">
+                <div class="sidebar-item">
+                    <img src="/images/profile.jpg" alt="Profile" />
+                    <p>Chintu Hacker</p>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Mega AI</p>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <p>Friends</p>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-rss"></i>
+                    <p>Feed</p>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-users"></i>
+                    <p>Groups</p>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-film"></i>
+                    <p>Reels</p>
+                </div>
+                <div class="sidebar-item">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <p>Memories</p>
+                </div>
+
+                <!-- Hidden links -->
+                <div id="more-links" class="hidden">
+                    <div class="sidebar-item">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <p>Events</p>
+                    </div>
+                    <div class="sidebar-item">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <p>Birthdays</p>
+                    </div>
+                    <div class="sidebar-item">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <p>Mega Message</p>
+                    </div>
+                    <div class="sidebar-item">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <p>Fundraisers</p>
+                    </div>
+                    <div class="sidebar-item">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <p>Ads</p>
+                    </div>
+                    <div class="sidebar-item">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <p>Mega Business Centre</p>
+                    </div>
+                    <div class="sidebar-item">
+                    <i class="fa-solid fa-flag"></i>
+                    <p>Pages</p>
+                    </div>
+                </div>
+
+                <!-- See More button -->
+                <div class="sidebar-item see-more" onclick="toggleMoreLinks()">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <p>See More</p>
+                </div>
+                </div>
+
+                <hr />
+
+                <!-- SHORTCUTS SECTION -->
+                <p class="sidebar-section-title">Shortcuts</p>
+
+                <a href="https://canvas-project-rho.vercel.app/" class="sidebar-item" target="_blank">
+                <img src="/images/draw-box.png" alt="Draw Box" />
+                <p>Draw Box</p>
+                </a>
+                <a href="https://rock-paper-scissors-delta-pink.vercel.app/" class="sidebar-item" target="_blank">
+                <img src="/images/rock-paper-scissors.png" alt="Rock Paper Scissors" />
+                <p>Rock-paper-Scissors</p>
+                </a>
+                <a href="https://bingo-game-gamma.vercel.app/" class="sidebar-item" target="_blank">
+                <img src="/images/bingo.png" alt="Bingo" />
+                <p>Bingo</p>
+                </a>
+                <a href="https://currency-drab-seven.vercel.app/" class="sidebar-item" target="_blank">
+                <img src="/images/currency-convertor.png" alt="Currency Convertor" />
+                <p>Currency Convertor</p>
+                </a>
+                <a href="https://password-strength-checker-jet.vercel.app/" class="sidebar-item" target="_blank">
+                <img src="/images/password-strength.png" alt="Password Strength Checker" />
+                <p>Password Strength Checker</p>
+                </a>
+            </div>
+
+            <!-- center-section -->
+
+            <div class="main-center">
+              <div class="story-section">
+                <div class="my-story story-box">
+                  <img src="/images/profile.jpg" alt="">
+                  <div class="overlay"></div>
+                  <div class="add-icon">+</div>
+                  <p>Add Your Story</p>
+                </div>
+
+                <div class="friends-story story-box">
+                  <img src="/images/friends/messi.jpg" alt="">
+                  <div class="profile-thumb">
+                    <img src="/images/friends/messi.jpg" alt="">
+                  </div>
+                  <p>Leo Messi</p>
+                </div>
+
+                <div class="friends-story story-box">
+                  <img src="/images/friends/Tim-Berners-Lee.webp" alt="">
+                  <div class="profile-thumb">
+                    <img src="/images/friends/Tim-Berners-Lee.webp" alt="">
+                  </div>
+                  <p>Tim Berners Lee</p>
+                </div>
+
+                <div class="friends-story story-box">
+                  <img src="/images/friends/Bill_Gates.jpg" alt="">
+                  <div class="profile-thumb">
+                    <img src="/images/friends/Bill_Gates.jpg" alt="">
+                  </div>
+                  <p>Bill Gates</p>
+                </div>
+
+                <div class="friends-story story-box">
+                  <img src="/images/friends/Steve-Jobs.jpg" alt="">
+                  <div class="profile-thumb">
+                    <img src="/images/friends/Steve-Jobs.jpg" alt="">
+                  </div>
+                  <p>Steve Jobs</p>
+                </div>
+
+                <div class="friends-story story-box">
+                  <img src="/images/friends/Dennis_Ritchie.jpg" alt="">
+                  <div class="profile-thumb">
+                    <img src="/images/friends/Dennis_Ritchie.jpg" alt="">
+                  </div>
+                  <p>Dennis Ritchie</p>
+                </div>
+
+                <div class="friends-story story-box">
+                  <img src="/images/friends/Guido_van_Rossum.jpg" alt="">
+                  <div class="profile-thumb">
+                    <img src="/images/friends/Guido_van_Rossum.jpg" alt="">
+                  </div>
+                  <p>Guido Van Russom</p>
+                </div>
+              </div>
+
+              <!-- create a post box  -->
+
+              <div class="create-post">
+                <div class="create-post-header">
+                  <img src="/images/profile.jpg" alt="Profile" class="post-profile-pic">
+                  <input type="text" placeholder="What's on your mind, Chintu?" class="create-post-input">
+                </div>
+                <div class="create-post-actions">
+                  <button><i class="fa fa-image"></i> Photo/Video</button>
+                  <button><i class="fa-solid fa-face-smile"></i> Feeling/Activity</button>
+                  <button class="post-btn"> <i class="fa-solid fa-location-arrow"></i> Post</button>
+                </div>
+              </div>
+
+
+              <div class="post">
+                <div class="post-header">
+                  <img src="/images/profile.jpg" alt="Profile" class="post-profile-pic">
+                  <div class="post-user-info">
+                    <h4>Chintu Hacker</h4>
+                    <span>Just now</span>
+                  </div>
+                  <div class="post-options">⋯</div>
+                </div>
+
+                <div class="post-content">
+                  <p id="firstPost">This is my first post on Fakebook! Loving the vibe here. 😊</p>
+                </div>
+
+                <div class="post-actions">
+                  <button><i class="fa fa-thumbs-up"></i> Like</button>
+                  <button><i class="fa fa-comment"></i> Comment</button>
+                  <button><i class="fa fa-share"></i> Share</button>
+                </div>
+              </div>
+              <div class="post">
+                <div class="post-header">
+                  <img src="/images/profile.jpg" alt="Profile" class="post-profile-pic">
+                  <div class="post-user-info">
+                    <h4>Chintu Hacker</h4>
+                    <span>1 hr ago</span>
+                  </div>
+                  <div class="post-options">⋯</div>
+                </div>
+
+                <div class="post-content">
+                  <p>It is important to to check the url of the page before entering any credentials. Make sure you are in the correct URL.</p>
+                  <img src="/images/url.png" alt="post-image" class="post-image">
+                </div>
+
+                <div class="post-actions">
+                  <button><i class="fa fa-thumbs-up"></i> Like</button>
+                  <button><i class="fa fa-comment"></i> Comment</button>
+                  <button><i class="fa fa-share"></i> Share</button>
+                </div>
+              </div>
+              <div class="post">
+                <div class="post-header">
+                  <img src="/images/profile.jpg" alt="Profile" class="post-profile-pic">
+                  <div class="post-user-info">
+                    <h4>Chintu Hacker</h4>
+                    <span>2 wks ago</span>
+                  </div>
+                  <div class="post-options">⋯</div>
+                </div>
+
+                <div class="post-content">
+                  <p><strong>Cybersecurity Tip 💡</strong><br>
+                  Trust your instincts, not just the interface. Always trust:</p>
+                  <li>✅ Websites with HTTPS (Padlock icon)</li>
+                  <li>✅ Two-factor authentication</li>
+                  <li>✅ Verified senders and official sources</li>
+                  <p>But don't trust:</p>
+                    <li>❌ Random pop-ups or urgent security warnings</li>
+                    <li>❌ Emails asking for passwords or personal data</li>
+                    <li>❌ "Free" downloads from sketchy websites </li>
+                  <p>Stay alert, stay safe. Hackers don't knock. 🛡️</p>
+                </div>
+
+                <div class="post-actions">
+                  <button><i class="fa fa-thumbs-up"></i> Like</button>
+                  <button><i class="fa fa-comment"></i> Comment</button>
+                  <button><i class="fa fa-share"></i> Share</button>
+                </div>
+              </div>
+              <div class="post">
+                <div class="post-header">
+                  <img src="/images/profile.jpg" alt="Profile" class="post-profile-pic">
+                  <div class="post-user-info">
+                    <h4>Chintu Hacker</h4>
+                    <span>7 mins ago</span>
+                  </div>
+                  <div class="post-options">⋯</div>
+                </div>
+
+                <div class="post-content">
+                  <p></p>
+                  <img src="/images/safe.png" alt="post-image" class="post-image">
+                </div>
+
+                <div class="post-actions">
+                  <button><i class="fa fa-thumbs-up"></i> Like</button>
+                  <button><i class="fa fa-comment"></i> Comment</button>
+                  <button><i class="fa fa-share"></i> Share</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- right-section -->
+                <div class="main-right">
+                <!-- Sponsored Section -->
+                <div class="sponsered-section">
+                    <h4>Sponsored</h4>
+                    <div class="sponsered-item">
+                        <img src="/images/networking-ports.png" alt="">
+                        <p>Learn Networking Ports <br> <a href="https://networking-ports.vercel.app/" target="_blank">Click to learn.</a></p>
+                    </div>
+                    <div class="sponsered-item">
+                        <img src="/images/sponsered-profile.png" alt="">
+                        <p>Unish Dhungana Portfolio <br> <a href="https://unishdhungana.com.np/" target="_blank">Visit Portfolio</a></p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Pages -->
+                <div class="page-section">
+                    <h4>Your Pages</h4>
+                    <p>You do not manage any pages.</p>
+                </div>
+
+                <br>
+                <hr>
+
+                <!-- Friends Section -->
+                <div class="friends-section">
+                    <h4>Your Friends</h4>
+
+                    <div class="friend-profile">
+                        <img src="/images/friends/messi.jpg" alt="">
+                        <p>Leo Messi</p>
+                    </div>
+                    <div class="friend-profile">
+                        <img src="/images/friends/Tim-Berners-Lee.webp" alt="">
+                        <p>Tim Berners-Lee</p>
+                    </div>
+                    <div class="friend-profile">
+                        <img src="/images/friends/Alan_Turing.jpg" alt="">
+                        <p>Alan Turing</p>
+                    </div>
+                    <div class="friend-profile">
+                        <img src="/images/friends/Grace_Hopper.jpg" alt="">
+                        <p>Grace Hopper</p>
+                    </div>
+                    <div class="friend-profile">
+                        <img src="/images/friends/Linus-Torvalds.webp" alt="">
+                        <p>Linus Torvalds</p>
+                    </div>
+                    <div class="friend-profile">
+                        <img src="/images/friends/Guido_van_Rossum.jpg" alt="">
+                        <p>Guido van Rossum</p>
+                    </div>
+                    <div class="friend-profile">
+                        <img src="/images/friends/Dennis_Ritchie.jpg" alt="">
+                        <p>Dennis Ritchie</p>
+                    </div>
+                    <div class="friend-profile">
+                        <img src="/images/friends/Bill_Gates.jpg" alt="">
+                        <p>Bill Gates</p>
+                    </div>
+                    <div class="friend-profile">
+                        <img src="/images/friends/Steve-Jobs.jpg" alt="">
+                        <p>Steve Jobs</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Footer (commented out as per instruction) -->
+    <!-- <footer>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">More</a>
+      </div>
+      <p class="footer-copy">Fakebook © 2025</p>
+    </footer> -->
+
+    <!-- Scripts -->
+    <script src="/home/scripttwo.js"></script>
+    <script src="/script.js"></script>
+  </div>
+</body>
+</html>

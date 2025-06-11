@@ -1,0 +1,230 @@
+:root {
+  --fb-blue: #1877F2;
+  --fb-dark-blue: #385898;
+  --fb-light-blue: #E7F3FF;
+  --messenger-blue: #00B2FF;
+  --text-black: #1C1E21;
+  --light-gray: #F0F2F5;
+  --medium-gray: #DADDE1;
+  --dark-gray: #65676B;
+
+  --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--light-gray);
+  color: var(--text-black);
+  margin: 0;
+  padding: 0;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px 20px; */
+  min-height: 100vh;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.left-side {
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.fb-logo > img {
+  width: 300px;
+  height: auto;
+}
+
+.left-side h2 {
+  width: 400px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.19;
+}
+
+.right-side {
+  padding: 20px;
+}
+
+.right-side form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  min-width: 320px;
+  max-width: 400px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid var(--medium-gray);
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: var(--fb-blue);
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: var(--fb-dark-blue);
+}
+
+h4 {
+  text-align: center;
+  margin: 16px 0;
+  color: var(--fb-blue);
+  cursor: pointer;
+}
+
+h4:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  content: "";
+  display: block;
+  height: 0.5px;
+  background-color: var(--medium-gray);
+  margin: 10px 0;
+}
+
+.create-btn {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  background-color: #42b72a;
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #36a420;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px 10px;
+  background-color: var(--light-gray);
+  text-align: center;
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--dark-gray);
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--fb-blue);
+}
+
+.footer-copy {
+  font-size: 13px;
+}
+
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .login-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .fb-logo > img {
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .left-side h2 {
+    width: 90%;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .right-side form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: white;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .login-btn,
+  .create-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .divider {
+    margin: 16px 0;
+  }
+}
