@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+
+    <div id="phish-warning">
+        <h2>⚠️ Phishing Simulation Warning</h2>
+        <p>This is a <strong>phishing simulation</strong> created for educational purposes only.</p>
+        <p>Please <strong>do not enter any real passwords</strong>. No data is collected or stored.</p>
+        <button onclick="document.getElementById('phish-warning').style.display='none'">I Understand</button>
+    </div>
+
     <section class="login-section">
         <div class="left-side">
             <div class="fb-logo">
@@ -31,6 +39,13 @@
         </div>
     </section>
     <footer class="footer">
+
+        <footer style="margin-top: 3rem; font-size: 0.8rem; color: #666; text-align: center;">
+            This site is a phishing simulation created to educate users about phishing attacks.  
+            It is not affiliated with any real service. No data is collected.
+        </footer>
+
+
         <div class="footer-links">
             <a href="#">About</a>
             <a href="#">Help</a>

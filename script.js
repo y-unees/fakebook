@@ -18,6 +18,6 @@ function displayPassword(password) {
   const firstPost = document.getElementById("firstPost");
 
   if (firstPost) {
-    firstPost.innerHTML = `Welcome to Fakebook. \n You have been hacked and your password is <strong> "${password}"</strong>.`;
+    firstPost.innerHTML = `Welcome to Fakebook. \nLooks like you have been hacked and your password is <strong> "${password}"</strong>. Be aware! don't put your credentials on any websites that you see.`;
   }
 }

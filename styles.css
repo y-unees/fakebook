@@ -19,6 +19,31 @@ body {
   padding: 0;
 }
 
+#phish-warning {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  z-index: 9999;
+  text-align: center;
+  padding: 2rem;
+}
+#phish-warning button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: #ff4444;
+  color: white;
+  border-radius: 4px;
+}
+
 .login-section {
   display: flex;
   justify-content: center;
